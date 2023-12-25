@@ -1,14 +1,16 @@
 import React from "react";
 import { Stack } from "@mui/material";
 import { Link } from "react-router-dom";
-import { logo } from "../Utils/constants";
+import { logo } from "../Utils/Constants";
+import SearchBar from "./SearchBar";
+
 
 function Navbar() {
   return (
     <Stack
       direction="row"
       alignItems="center"
-      p={2}
+      p={1}
       sx={{
         position: "sticky",
         background: "#000",
@@ -16,7 +18,12 @@ function Navbar() {
         justifyContent: "space-between",
       }}
     >
-      <Link to='/' />
+      <Link to='/'  style={{display:'flex', alignItems:'center'}}>
+        <img src={logo} alt="logo" className="h-[30px]" />
+      </Link>
+
+      <SearchBar/>
+
     </Stack>
   );
 }
