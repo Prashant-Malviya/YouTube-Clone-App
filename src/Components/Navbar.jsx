@@ -19,7 +19,7 @@ function Navbar() {
       }}
     >
       <Link to='/'  style={{display:'flex', alignItems:'center'}}>
-        <img src={logo} alt="logo" className="h-[30px]" />
+        <img src={logo} alt="logo" className="h-[40px]" />
       </Link>
 
       <SearchBar/>
